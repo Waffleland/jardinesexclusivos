@@ -1,0 +1,320 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+  }
+#global{
+    display: grid;
+}
+.portada{
+    background-image: url(../jardines/imagenes/tapa-sombra3.jpg);
+    background-size:cover;
+    height: 600px;
+}
+.portada h1, .portada h2{
+    text-align: center;
+    color: #86b77d;
+    text-shadow:#000 8px 8px 10px;
+    -webkit-text-stroke: 1px #ffff;  
+}
+.portada h1{
+    padding-top: 130px;
+    font-size: 60px;
+    letter-spacing: 8px;
+}
+.portada h2{
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.portada href{
+    text-align: center;
+}
+.portada button{
+    width: 210px; 
+    height: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    border: solid #ffff 2px ;
+    border-radius: 15px;
+    background-color: #86b77d;
+    color: #ffff;
+    font-size: 20px;
+}
+.portada button:hover{
+    cursor: pointer;
+    
+}
+.historia, .jardines360{
+    background-image: url(imagenes/fondohojas.png);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+}
+.historia h1{
+    text-align: center;
+    margin-top: 115px;
+    color: #86b77d;
+    text-shadow:#000 8px 8px 10px;
+    -webkit-text-stroke: 1px #ffff; 
+    font-size: 40px;   
+}
+.historia p{
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #858585;
+}
+.historia2 img{
+    width: 300px;
+    float: left;
+}
+.historia2 p , .historia2 h2, .jardines h2, .jardines360{
+    text-align: center;
+}
+.historia2 p{
+    margin-left: 40px;
+    margin-right: 40px;
+    color:#858585;
+}
+.historia2 h2, .jardines h2, .jardines360{
+    color: #858585;
+}
+.jardines{
+    background-image: url(imagenes/fondohojas.png);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: contain;
+}
+.jardines h2{
+    margin-top: 130px;
+    margin-bottom: 70px;
+}
+#planta2 img{
+    float: right;
+}
+.jardines .slider{
+    width: 100%;
+    height: 300px;
+}
+.jardines .bxslider img{
+    width: 100%;
+    height: 500px;
+}
+.jardines .bxslider{
+    width: 100% !important;
+}
+#marcos img{
+    float:right;
+    top: -20px;
+    width: 230px;
+    margin-left: 20px;
+}
+#marcos p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 80px;
+    margin-left: 50px;
+    text-align: center;
+    color:#858585;
+}
+
+.content-all{
+    width: 230px;
+    perspective: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+}
+.content-carousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+.content-carousel:hover{
+    animation-play-state: paused;
+}
+.content-carousel figure{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.content-carousel figure:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(2){
+    transform: rotateY(45deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(3){
+    transform: rotateY(90deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(4){
+    transform: rotateY(135deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(5){
+    transform: rotateY(180deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(6){
+    transform: rotateY(225deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(7){
+    transform: rotateY(270deg) translateZ(300px);
+}
+.content-carousel figure:nth-child(8){
+    transform: rotateY(315deg) translateZ(300px);
+}
+.content-carousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+.content-carousel img:hover{
+    transform: scale(1.2) ;
+    cursor: pointer;
+    
+}
+@keyframes rotar{
+    from{
+        transform:rotateY(0deg) ;
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+.footer{
+    background-image: url(imagenes/linea-final.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer iframe{
+    margin-top: 100px;
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+.footer p, .footer h2{
+    text-align:center;
+    color:#858585;
+}
+.footer h2{
+    margin-top: 140px;
+    
+}
+.jardines360{
+    margin-top: 250px;
+}
+.jardines360 h2{
+    margin-top: 130px;
+}
+.jardines360 p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.imagenes360 img{
+    margin:20px;
+    box-shadow: 0px 0px 20px #000;
+}
+.imagenes360{
+    text-align: center;
+}
+
+@media all and (max-width: 480px){
+    .portada{
+        height: 500px;
+    }
+    .portada h1{
+        padding-top: 15px;
+        font-size: 50px;
+        letter-spacing: 6px;
+    }
+    .historia h1{
+        margin-top: 25px;
+        font-size: 30px;   
+    }
+    .historia{
+        background-size: contain;
+    }
+    .historia2 img{
+        display: none;
+    }
+    .jardines h2{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .jardines .bxslider img{
+        height: 300px;
+        width: 400px;
+    }
+    .slider{
+        width: 400px;
+    }
+    .bx-wrapper{
+        width: 400px;
+    }
+    #marcos{
+        text-align: center;
+    }
+    #marcos img{
+        float: inherit;
+        top: -20px;
+        width: 230px;
+        margin-left: 20px;
+    }
+    #marcos p{
+        margin-top: 5px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .content-all{
+        width: 120px;
+        margin-top: 20px;
+    }
+    .content-carousel figure{
+        height: 80px;
+    }
+    .content-carousel figure:nth-child(1){
+        transform: rotateY(0deg) translateZ(150px);
+    }
+    .content-carousel figure:nth-child(2){
+        transform: rotateY(45deg) translateZ(150px);
+    }
+    .content-carousel figure:nth-child(3){
+        transform: rotateY(90deg) translateZ(150px);
+    }
+    .content-carousel figure:nth-child(4){
+        transform: rotateY(135deg) translateZ(150px);
+    }
+    .content-carousel figure:nth-child(5){
+        transform: rotateY(180deg) translateZ(150px);
+    }
+    .content-carousel figure:nth-child(6){
+        transform: rotateY(225deg) translateZ(150px);
+    }
+    .content-carousel figure:nth-child(7){
+        transform: rotateY(270deg) translateZ(150px);
+    }
+    .content-carousel figure:nth-child(8){
+        transform: rotateY(315deg) translateZ(150px);
+    }
+    .jardines360{
+        background-size: contain;
+    }
+    .jardines360 h2{
+        margin-top: 50px;
+    }
+    .imagenes360{
+        text-align: inherit;
+    }
+    .imagenes360 img{
+        width: 150px;
+    }
+    .footer iframe{
+        margin-top: 30px;
+        float: left;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+}
