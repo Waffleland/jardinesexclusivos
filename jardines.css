@@ -7,7 +7,7 @@ body {
     display: grid;
 }
 .portada{
-    background-image: url(../jardines/imagenes/tapa-sombra3.jpg);
+    background-image: url(imagenes/tapa-sombra3.jpg);
     background-size:cover;
     height: 600px;
 }
@@ -26,22 +26,22 @@ body {
     font-size: 40px;
     letter-spacing: 3px;
 }
-.portada href{
+.button{
     text-align: center;
 }
-.portada button{
-    width: 210px; 
-    height: 30px;
+.button{
     margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 15px;
     border: solid #ffff 2px ;
     border-radius: 15px;
     background-color: #86b77d;
     color: #ffff;
     font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
 }
-.portada button:hover{
+.button:hover{
     cursor: pointer;
     
 }
@@ -221,7 +221,7 @@ body {
     text-align: center;
 }
 
-@media all and (max-width: 480px){
+@media (max-width: 480px){
     .portada{
         height: 500px;
     }
@@ -316,5 +316,34 @@ body {
         float: left;
         margin-left: 0px;
         margin-bottom: 50px;
+    }
+}
+@media (min-width: 1200px){
+    .historia h1{
+        margin-top: 190px;
+    }
+    .historia p{
+        margin-top: 60px;
+    }
+    .jardines h2{
+        margin-top: 180px;
+    }
+    .bx-wrapper{
+        margin-top: 100px;
+        max-width: 1200px !important;
+        position: relative;
+        margin: auto;
+    }
+    .jardines360 h2{
+        margin-top: 180px;
+    }
+    .jardines360 p{
+        margin-top: 100px;
+    }
+    .portada{
+        height: 950px;
+    }
+    .portada h1{
+        margin-top: 150px;
     }
 }
