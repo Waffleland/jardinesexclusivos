@@ -134,13 +134,19 @@ body {
 }
 .content-carousel:hover{
     animation-play-state: paused;
+    transform: scale(1.5);
 }
+
 .content-carousel figure{
     width: 100%;
     height: 150px;
     position: absolute;
     overflow: hidden;
     box-shadow: 0px 0px 20px #000;
+}
+.content-carousel figure:hover{
+    height: 180px;
+    width: 250px;
 }
 
 .content-carousel figure:nth-child(1){
@@ -172,10 +178,12 @@ body {
     transition: all 300ms;
 }
 .content-carousel img:hover{
-    transform: scale(1.2) ;
+    transform: scale(1.5) ;
     cursor: pointer;
+
     
 }
+
 @keyframes rotar{
     from{
         transform:rotateY(0deg) ;
@@ -220,7 +228,14 @@ body {
 .imagenes360{
     text-align: center;
 }
-
+#iconos{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#iconos a{
+    color:#858585;
+}
 @media (max-width: 480px){
     .portada{
         height: 500px;
